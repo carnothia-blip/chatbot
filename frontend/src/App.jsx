@@ -40,7 +40,7 @@ export default function App() {
     <div className="wrap">
       {" "}
       {/* 28 */}
-      <h1>🤖 AI 챗봇</h1> {/* 29 */}
+      <h1>AI 챗봇</h1> {/* 29 */}
       <div className="box">
         {" "}
         {/* 30 */}
@@ -52,7 +52,7 @@ export default function App() {
             <div key={i} className={m.role}>
               {" "}
               {/* 32 */}
-              <span>{m.role === "user" ? "🧑" : "🤖"}</span> {/* 33 */}
+              <span>{m.role === "user" ? "" : ""}</span> {/* 33 */}
               <p>{m.text}</p> {/* 34 */}
             </div> // 35
           ),
