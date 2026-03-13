@@ -39,11 +39,11 @@ export default function App() {
     // 27
     <div className="wrap">
       {" "}
-      // 28
-      <h1>🤖 AI 챗봇</h1> // 29
+      {/* 28 */}
+      <h1>🤖 AI 챗봇</h1> {/* 29 */}
       <div className="box">
         {" "}
-        // 30
+        {/* 30 */}
         {msgs.map(
           (
             m,
@@ -51,29 +51,29 @@ export default function App() {
           ) => (
             <div key={i} className={m.role}>
               {" "}
-              // 32
-              <span>{m.role === "user" ? "🧑" : "🤖"}</span> // 33
-              <p>{m.text}</p> // 34
+              {/* 32 */}
+              <span>{m.role === "user" ? "🧑" : "🤖"}</span> {/* 33 */}
+              <p>{m.text}</p> {/* 34 */}
             </div> // 35
           ),
         )}{" "}
-        // 36
-        {loading && <p className="loading">생각 중...</p>} // 37
+        {/* 36 */}
+        {loading && <p className="loading">생각 중...</p>} {/* 37 */}
       </div>{" "}
-      // 38
+      {/* 38 */}
       <div className="input-row">
         {" "}
-        // 39
+        {/* 39 */}
         <input // 40
           value={input} // 41
           onChange={(e) => setInput(e.target.value)} // 42
           onKeyDown={onKey} // 43
           placeholder="메시지를 입력하세요" // 44
         />{" "}
-        // 45
-        <button onClick={send}>전송</button> // 46
+        {/* 45 */}
+        <button onClick={send}>전송</button> {/* 46 */}
       </div>{" "}
-      // 47
+      {/* 47 */}
     </div> // 48
   ); // 49
 } // 50
